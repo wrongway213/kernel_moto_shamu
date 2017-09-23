@@ -151,6 +151,13 @@ config MAXIMUM_CURRENT_THROTTLING
 	  turn on/off CPU based current throttling by setting the
 	  credit/upper limit in the CPU registers.
 
+config BLU_PLUG
+	bool "Dynamic hotplug driver"
+	depends on HOTPLUG_CPU
+	default n
+	help
+	  The Dynamic hotplug driver automatically online/offline CPUs proportional to system load.
+
 config STATE_NOTIFIER
         bool "State Notifier"
 
