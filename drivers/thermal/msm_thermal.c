@@ -54,7 +54,7 @@
 #define TSENS_NAME_FORMAT "tsens_tz_sensor%d"
 #define THERM_SECURE_BITE_CMD 8
 
-unsigned int temp_threshold = 60;
+unsigned int temp_threshold = 70;
 module_param(temp_threshold, int, 0755);
 
 struct msm_thermal_data msm_thermal_info;
